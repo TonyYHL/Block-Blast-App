@@ -1,0 +1,58 @@
+/* Board container */
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    gap: 2px; /* Optional spacing between squares */
+    width: fit-content;
+    border: 2px solid black;
+    margin: 20px auto;
+}
+
+#action1, #action2, #action3 {
+    display: grid;
+    grid-template-columns: repeat(5, 25px);
+    grid-template-rows: repeat(5, 25px);
+    gap: 1px;
+    width: fit-content;
+    border: 1px solid black;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+#actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.display_square {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+
+/* Squares on the board */
+.square {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+/* Highlight effect on hover */
+.square:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 5px #000;
+}
+
+#score {
+    position: absolute;
+    height: 100px;
+    width: 300px;
+}
